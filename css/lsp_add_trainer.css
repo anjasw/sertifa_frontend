@@ -1,0 +1,182 @@
+.head{
+    background-image: url('../img/bg/testimoni.png');
+    height: 402px;
+    background-size: 100% !important;
+    position: relative;
+    background-repeat: no-repeat;
+    bottom: 19px;
+    /* filter: blur(5px); */
+  }
+.info{
+    position:relative; bottom:0px
+}
+.hiddden{
+    position: absolute;
+    left:100px;
+}
+.kepala{
+    background: url('assets/bg-asset/komputasi.jpg'); background-size:100% !important; background-repeat:no-repeat; height:427px
+  }
+	#file-input{
+		display: none;
+	}
+  .bb{
+    display: none
+  }
+  #menu-kiri{
+      padding:10px;
+      margin-left: -10px
+  }
+  .atas{
+    background-color: #20c617;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 0px
+  }
+  .bawah{
+    background-color: #76edcb;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px
+  }
+    .pnl{
+      margin-bottom:20px;
+      border:0px solid transparent;
+      border-radius:4px;
+      -webkit-box-shadow:0 1px 1px rgba(0,0,0,.05);
+      box-shadow:0 1px 1px rgba(0,0,0,.05)
+    }
+      .pnl-body{
+        padding:15px
+      }
+      .pnl-heading{
+        padding:10px 10px;
+        background-color: #1c7b0a;
+
+        border-bottom:1px solid transparent;
+        border-top-left-radius:3px;
+        border-top-right-radius:3px
+      }
+      .pnl-default{
+      }
+      .pnl>.pnl-default{
+        color:#333;
+        border-color:#fff
+      }
+      .pnl-default>.pnl-heading+.pnl-collapse>.pnl-body{
+        border-top-color:#ddd
+      }
+      .pnl-default>.pnl-heading .badge{
+        color:#f5f5f5;
+        background-color:#333
+      }
+      .pnl-default>.pnl-footer+.pnl-collapse>.pnl-body{
+        border-bottom-color:#ddd
+      }
+      .garis{
+        width:1px;height: 960px;background-color:black;position: absolute;left: -42px;top: 7px;
+      }
+      #pesan{
+        display: none
+      }
+      .zzz{
+        background-color: rgba(0,0,0,0.7); height: 402px;
+      }
+    @media only screen and (max-width: 991px){
+      .garis{
+        width: 1px;
+        height: 805px;
+        background-color: black;
+        position: absolute;
+        left: -1px;
+        top: 12px;
+      }
+      .zzz{
+        background-color: rgba(0,0,0,0.7);
+        height: 351px;
+        bottom: 71px;
+      }
+      .hiddden{
+        display: none;
+      }
+      .bb{
+        display: inline;
+      }
+      .kepala{
+        background: url('assets/bg-asset/komputasi.jpg');
+        background-size:100% !important;
+        background-repeat:no-repeat;
+        height:500px
+      }
+      #ssc{
+        display: none
+      }
+      .aaa{
+        display: none
+      }
+      #q{
+        display:none;
+      }
+      #pesan{
+        display: inline;
+      }
+    }
+    .selek{
+        background-color: #0c7e46; color: white;
+    }
+    .nav-kanan{
+        position: relative;
+        right: -44px;
+    }
+    .header-menu{
+        font-size: 14px;
+        color: #000;
+    }
+    h4{
+        font-size: 14px;
+        font-weight: 700;
+    }
+    .label-train{
+
+        font-weight: 500;
+        margin-top: 10px;
+    }
+    .judul-lsp{
+        margin-top:22px;
+        font-size: 17px;
+        font-weight: 700;
+    }
+    .card-on-header{
+        color:black;
+        font-size:13px; 
+        text-align:center
+    }
+    .head-info{
+        color:#fff; font-weight:700; text-align:center
+    }
+    .putih{
+        color: #fff;
+    }
+    .satuempatpx{
+        font-size: 14px;
+    }
+    .edit-header{
+        position: relative;
+        left: 1061px;
+        bottom: 95px;
+        width: 25px;
+        height: 23px;
+        background-color: #fff;
+        border-radius: 30px;
+        text-align: center;
+        padding: 5px;
+        color: #6b6bea;
+    }

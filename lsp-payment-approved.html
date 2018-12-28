@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <!-- //calender -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<title>Sertifa.com</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<script src="js/jquery.min.js" charset="utf-8"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="js/bootstrap.min.js" charset="utf-8"></script>
+	<link rel="stylesheet" href="calendar/jquery.calendar.css" />
+	<!-- //calendar -->
+	<!-- Google font -->
+	<style>
+		/* * {font-family: 'Open Sans';} */
+		body { background-color: #fafafa; }
+		pre {font-family: Courier New;}
+	</style>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- //calender -->
+	<!-- Google font -->
+	<link href="https://fonts.googleapis.com/css?family=Hind:400,700" rel="stylesheet">
+	<!-- Bootstrap -->
+	<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+	<!-- Slick -->
+	<link type="text/css" rel="stylesheet" href="css/slick.css" />
+	<link type="text/css" rel="stylesheet" href="css/slick-theme.css" />
+
+	<!-- nouislider -->
+	<link type="text/css" rel="stylesheet" href="css/nouislider.min.css" />
+
+	<!-- Font Awesome Icon -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+
+	<!-- Custom stlylesheet -->
+	<link type="text/css" rel="stylesheet" href="css/style.css" />
+  <style media="screen">
+    .kepala{
+      background: url('assets/bg-asset/komputasi.jpg'); background-size:100% !important; background-repeat:no-repeat; height:427px
+    }
+    #file-input{
+      display: none;
+    }
+    .bb{
+      display: none
+    }
+    .atas{
+      background-color: #039c4c;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      padding-top: 20px;
+      padding-left: 20px;
+      padding-bottom: 0px
+    }
+    .bawah{
+      background-color: #bae3c8;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-right-radius: 20px;
+      border-bottom-left-radius: 20px;
+      padding-top: 20px;
+      padding-left: 20px;
+      padding-bottom: 0px;
+    }
+    .pnl{
+      margin-bottom:20px;
+      border:0px solid transparent;
+      border-radius:4px;
+      -webkit-box-shadow:0 1px 1px rgba(0,0,0,.05);
+      box-shadow:0 1px 1px rgba(0,0,0,.05)
+    }
+    .pnl-body{
+      padding:15px
+    }
+    .pnl-heading{
+      padding:10px 10px;
+      background-color: #1c7b0a;
+
+      border-bottom:1px solid transparent;
+      border-top-left-radius:3px;
+      border-top-right-radius:3px
+    }
+    .pnl-default{
+    }
+    .pnl>.pnl-default{
+      color:#333;
+      border-color:#fff
+    }
+    .pnl-default>.pnl-heading+.pnl-collapse>.pnl-body{
+      border-top-color:#ddd
+    }
+    .pnl-default>.pnl-heading .badge{
+      color:#f5f5f5;
+      background-color:#333
+    }
+    .pnl-default>.pnl-footer+.pnl-collapse>.pnl-body{
+      border-bottom-color:#ddd
+    }
+    .garis{
+      width: 1px;
+      height: 685px;
+      background-color: black;
+      position: absolute;
+      left: 115px;
+      top: 30px;
+    }
+    #pesan{
+      display: none
+    }
+    .zzz{
+      background-color: rgba(0,0,0,0.7); height: 360px;
+    }
+    @media only screen and (max-width: 991px){
+      .garis{
+        width: 1px;
+        height: 805px;
+        background-color: black;
+        position: absolute;
+        left: -1px;
+        top: 12px;
+      }
+      .zzz{
+        background-color: rgba(0,0,0,0.7);
+        height: 351px;
+        bottom: 71px;
+      }
+      .hiddden{
+        display: none;
+      }
+      .bb{
+        display: inline;
+      }
+      .kepala{
+        background: url('assets/bg-asset/komputasi.jpg');
+        background-size:100% !important;
+        background-repeat:no-repeat;
+        height:500px
+      }
+      #ssc{
+        display: none
+      }
+      .aaa{
+        display: none
+      }
+      #q{
+        display:none;
+      }
+      #pesan{
+        display: inline;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+	<!-- HEADER -->
+	<!-- HEADER -->
+  <header>
+    <div id="header" class="fixed">
+      <div class="container">
+        <div class="col-md-9 pull-left">
+          <!-- Logo -->
+          <div class="header-logo">
+            <a class="logo" href="index.html">
+              <img src="./img/logo.png" alt="">
+            </a>
+          </div>
+          <div class="header-search" style="max-width: 630px;">
+            <div class="row" id="ssc">
+              <div class="col-md-2">
+                <ul class="category-list program-categories">
+                  <li class="dropdown mega-dropdown full-width">
+                    <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">Kategori <i class="fa fa-caret-down" style="color: green;"></i></a>
+                    <div class="custom-menu">
+                      <div class="row hidden-sm hidden-xs">
+                        <!-- kategori -->
+                        <div class="col-md-3 col-sm-6">
+                          <a class="banner banner-1" href="#">
+                            <img src="./img/kategori/kat-otomotif.png" alt="">
+                            <div class="banner-caption text-center">
+                              <h2 class="white-color">Otomotif</h2>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                          <a class="banner banner-1" href="#">
+                            <img src="./img/kategori/kat-tekno.png" alt="">
+                            <div class="banner-caption text-center">
+                              <h2 class="white-color">Teknologi</h2>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                          <a class="banner banner-1" href="#">
+                            <img src="./img/kategori/kat-pharma.png" alt="">
+                            <div class="banner-caption text-center">
+                              <h2 class="white-color">Farmasi</h2>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                          <a class="banner banner-1" href="#">
+                            <img src="./img/kategori/kat-migas.png" alt="">
+                            <div class="banner-caption text-center">
+                              <h2 class="white-color">Migas</h2>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="row hidden-sm hidden-xs">
+                        <!-- kategori -->
+                        <div class="col-md-3 col-sm-6">
+                          <a class="banner banner-1" href="#">
+                            <img src="./img/kategori/kat-otomotif.png" alt="">
+                            <div class="banner-caption text-center">
+                              <h2 class="white-color">Otomotif</h2>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                          <a class="banner banner-1" href="#">
+                            <img src="./img/kategori/kat-tekno.png" alt="">
+                            <div class="banner-caption text-center">
+                              <h2 class="white-color">Teknologi</h2>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                          <a class="banner banner-1" href="#">
+                            <img src="./img/kategori/kat-pharma.png" alt="">
+                            <div class="banner-caption text-center">
+                              <h2 class="white-color">Farmasi</h2>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                          <a class="banner banner-1" href="#">
+                            <img src="./img/kategori/kat-migas.png" alt="">
+                            <div class="banner-caption text-center">
+                              <h2 class="white-color">Migas</h2>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <form class="col-md-10" action="search-page.html">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="input-group">
+                      <input class="form-control search-input" type="text" name="q" placeholder="Cari Sertifikasi Program">
+
+                      <div class="input-group-btn">
+                        <select tabindex="-1" class="form-control search-categories" name="kategori" style="background-color: #0c7e46; color: white;">
+                          <option>Kota</option>
+                          <option value="1">Bogor</option>
+                          <option value="1">Bekasi</option>
+                          <option value="1">Bandung</option>
+                          <option value="1">Depok</option>
+                        </select>
+                        <button tabindex="-1" class="btn btn-default search-btn"><i class="fa fa-search" style="color: white;"></i></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <!-- /Search -->
+        </div>
+        <div class="col-md-3 aaa" style="
+        position: relative;
+        right: 60px;
+        ">
+        <ul class="header-btns pull-right aaa ba">
+          <!-- Calendar -->
+          <li class="header-account dropdown default-dropdown">
+            <div class="dropdown-toggle" role="button" data-toggle="dropdown" aria-expanded="true">
+              <div class="header-btns-icon">
+                <i class="fa fa-user-o"></i>
+              </div>
+            </div>
+            <ul class="custom-menu">
+              <li>
+                <p class="font-header">Agenda Saya</p>
+                <ul class="timeline">
+                  <li>
+                    <span class="fa fa-check-circle check" aria-hidden="true" style="position: absolute;top: 0px;left: 195px;color: #079941;background-color: white;border-radius: 50%;"></span>
+                    <p class="small-f-h fh-top">22 Desember 2018</p>
+                    <button class="primary-btn" style="border-radius: 5px;height: 28px;width: 28%;padding: 0px;font-weight: 100;text-transform: none;position: absolute;left: 227px;bottom: 52px;">Detail</button>
+                    <p class="font-header fh-bottom">Sertifikasi Kopi</p>
+                    <hr style="border-color: #8d7569;position: relative;bottom: 40px;right: 7px;width: 94%;">
+                  </li>
+                </ul>
+                <ul class="timeline2">
+                  <li>
+                    <span class="fa fa-check-circle check" aria-hidden="true" style="position: absolute;top: 0px;left: 195px;color: #079941;background-color: white;border-radius: 50%;"></span>
+                    <p class="small-f-h fh-top">22 Desember 2018</p>
+                    <button class="primary-btn" style="border-radius: 5px;height: 28px;width: 28%;padding: 0px;font-weight: 100;text-transform: none;position: absolute;left: 227px;bottom: 52px;">Detail</button>
+                    <p class="font-header fh-bottom">Sertifikasi Barista</p>
+                    <hr style="border-color: #8d7569;position: relative;bottom: 40px;right: 7px;width: 94%;">
+                  </li>
+                </ul>
+                <ul class="timeline3">
+                  <li>
+                    <span class="fa fa-check-circle check" aria-hidden="true" style="position: absolute;top: 0px;left: 195px;color: #079941;background-color: white;border-radius: 50%;"></span>
+                    <p class="small-f-h fh-top">22 Desember 2018</p>
+                    <button class="warning-btn" style="border-radius: 5px;height: 28px;width: 28%;padding: 0px;font-weight: 100;text-transform: none;position: absolute;left: 227px;bottom: 52px;">Bayar</button>
+                    <p class="font-header fh-bottom">Sertifikasi Barista</p>
+                    <hr style="border-color: #8d7569;position: relative;bottom: 40px;right: 36px;width: 107%;">
+                  </li>
+                </ul>
+                <li>
+                  <div>
+                    <h2 style="position: absolute;left: 150px;top: 190px;color: #079941;z-index: 2;">2018</h2>
+                    <button class="primary-btn" style="border-radius: 28px;height: 25px;width: 35%;font-size: 17px;padding: 0px;font-weight: 100;text-transform: none;position: absolute;left: 120px;bottom: 295px; z-index:2;"><i class="fa fa-caret-left" style="position: relative;right: 10px;	z-index: 2;"></i>Desember<i class="fa fa-caret-right" style="position: relative;left: 10px;"></i></button>
+                  </div>
+                  <table class="nav-space">
+                    <tr class="nav-hari">
+                      <th>S</th>
+                      <th>S</th>
+                      <th>R</th>
+                      <th>K</th>
+                      <th>J</th>
+                      <th style="color:#f08519;">S</th>
+                      <th style="color:#f08519;">M</th>
+                    </tr>
+                  </table>
+                  <table class="nav-space">
+                    <tbody>
+                      <tr>
+                        <td class="nav-hijau"></td>
+                        <td class="nav-hijau"></td>
+                        <td class="nav-radius"><p>1</p>
+                          <div>
+                            <button class="primary-btn" style="border-radius: 5px;height: 11px;width: 3.5%;font-size: 10px;padding: 0px;font-weight: 100;text-transform: none;position: absolute;left: 122px;bottom: 190px;"></button>
+                          </div>
+                        </td>
+                        <td class="nav-radius"><p>2</p></td>
+                        <td class="nav-radius"><p>3</p></td>
+                        <td class="nav-orange"><p>4</p></td>
+                        <td class="nav-orange"><p>5</p></td>
+                      </tr>
+                      <tr>
+                        <td class="nav-radius"><p>6</p></td>
+                        <td class="nav-radius"><p>7</p></td>
+                        <td class="nav-radius"><p>8</p></td>
+                        <td class="nav-radius"><p>9</p>
+                          <div>
+                            <button class="nav-hijau-kuning" style="border-radius: 5px;height: 11px;width: 3.5%;font-size: 10px;padding: 0px;font-weight: 100;text-transform: none;position: absolute;left: 168px;bottom: 190px;"></button>
+                          </div>
+                        </td>
+                        <td class="nav-radius"><p>10</p></td>
+                        <td class="nav-orange"><p>11</p></td>
+                        <td class="nav-orange"><p>12</p></td>
+                      </tr>
+                      <tr>
+                        <td class="nav-radius"><p>13</p></td>
+                        <td class="nav-radius"><p>14</p></td>
+                        <td class="nav-radius"><p>15</p></td>
+                        <td class="nav-radius"><p>16</p></td>
+                        <td class="nav-radius"><p>17</p></td>
+                        <td class="nav-orange"><p>18</p></td>
+                        <td class="nav-orange"><p>19</p></td>
+                      </tr>
+                      <tr>
+                        <td class="nav-radius"><p>20</p></td>
+                        <td class="nav-radius"><p>21</p></td>
+                        <td class="nav-radius"><p>22</p>
+                          <div>
+                            <button class="primary-btn" style="border-radius: 5px;height: 11px;width: 3.5%;font-size: 10px;padding: 0px;font-weight: 100;text-transform: none;position: absolute;left: 123px;bottom: 57px;"></button>
+                          </div>
+                        </td>
+                        <td class="nav-radius"><p>23</p></td>
+                        <td class="nav-radius"><p>24</p></td>
+                        <td class="nav-orange"><p>25</p></td>
+                        <td class="nav-orange"><p>26</p></td>
+                      </tr>
+                      <tr>
+                        <td class="nav-radius"><p>27</p>
+                          <div>
+                            <button class="primary-btn" style="border-radius: 5px;height: 11px;width: 3.5%;font-size: 10px;padding: 0px;font-weight: 100;text-transform: none;position: absolute;left: 123px;bottom: 14px;"></button>
+                          </div>
+                        </td>
+                        <td class="nav-radius"><p>28</p></td>
+                        <td class="nav-radius"><p>29</p>
+                          <div>
+                            <button class="warning" style="border-radius: 5px;height: 11px;width: 3.5%;font-size: 10px;padding: 0px;font-weight: 100;text-transform: none;position: absolute;left: 31px;bottom: 14px;"></button>
+                          </div>
+                        </td>
+                        <td class="nav-radius"><p>30</p></td>
+                        <td class="nav-radius"><p>31</p></td>
+                        <td class="nav-hijau"></td>
+                        <td class="nav-hijau"></td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                  <a href="agenda.html"><button class="primary-btn" style="border-radius: 5px;height: 28px;width: 38%;padding: 0px;font-weight: 100;text-transform: none;position: absolute;left: 210px;bottom: 16px;">Selengkapnya</button></a>
+                </li>
+              </ul>
+            </li>
+            <!-- /Calendar -->
+            <!-- pemberitahuan -->
+            <li class="header-account dropdown default-dropdown">
+              <div class="dropdown-toggle" role="button" data-toggle="dropdown" aria-expanded="true">
+                <div class="header-btns-icon">
+                  <i class="fa fa-envelope-o"></i>
+                </div>
+              </div>
+              <ul class="custom-menu2">
+                <li>
+                  <p class="font-header"style="margin-bottom: 21px;">Notifikasi</p>
+                  <ul style="position: absolute;">
+                    <li>
+                      <p class="small-f-h fh-top">22 Desember 2018</p>
+                      <button class="primary-btn" style="border-radius: 5px;height: 28px;width: 45%;padding: 0px;font-weight: 100;text-transform: none;position: absolute;left: 187px;bottom: 62px;">Baca</button>
+                      <p class="font-header fh-bottom">Kamu terdaftar Sertifikasi ... </p>
+                      <hr style="border-color: #8d7569;position: relative;bottom: 40px;right: 0px;width: 153%;">
+                    </li>
+                  </ul>
+                  <ul style="position: absolute;top: 110px;">
+                    <li>
+                      <p class="small-f-h fh-top">22 Desember 2018</p>
+                      <button class="primary-btn" style="border-radius: 5px;height: 28px;width: 45%;padding: 0px;font-weight: 100;text-transform: none;position: absolute;left: 186px;bottom: 62px;">Baca</button>
+                      <p class="font-header fh-bottom">Kamu terdaftar Sertifikasi ... </p>
+                      <hr style="border-color: #8d7569;position: relative;bottom: 40px;right: 0px;width: 153%;">
+                    </li>
+                  </ul>
+                  <ul style="position: absolute;top: 160px;">
+                    <li>
+                      <p class="small-f-h fh-top">22 Desember 2018</p>
+                      <button class="primary-btn" style="border-radius: 5px;height: 28px;width: 42%;padding: 0px;font-weight: 100;text-transform: none;position: absolute;left: 186px; bottom: 61px;">Baca</button>
+                      <p class="font-header fh-bottom">Selesaikan Pembayaran Se... </p>
+                      <hr style="border-color: #8d7569;position: relative;bottom: 40px;right: 0px;width: 150%;">
+                    </li>
+                    <a href="#"><button class="primary-btn" style="border-radius: 5px;height: 28px;width: 61%;padding: 0px;font-weight: 100;text-transform: none;position: absolute;left: 150px;top: 40px;">Selengkapnya</button></a>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="header-menu dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img class="img-circle" width="50" src="img/saputra.jpg" alt=""> <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Akun Saya</a></li>
+                <li><a href="#">Logout</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </li>
+    </div>
+    <!-- header -->
+  </div>
+</header>
+<!-- /HEADER -->
+<div class="section">
+  <header class="head">
+    <div class="row">
+      <div class="col-md-4 zzz" id="transparant">
+        <div id="img_prof">
+          <center>
+            <img src="img/ava-2.jpg" style="margin-bottom: 25px; border: 5px solid #fff;border-radius: 50%;" width="130px" class="img-circle"><a href="#"> <span class="glyphicon glyphicon-edit" aria-hidden="true" style="width: 25px;height: 23px;border-radius: 10px;background-color: #ffffff;position: absolute;top: 175px;right: 173px;padding: 5px;color: green;"></span></a>
+            <h4  id="nama" >Saputra Hermansyah <span class="fa fa-check-circle" aria-hidden="true"></span></h4>
+            <p id="mail">Saputra@gmail.com</p>
+          </center>
+        </div>
+      </div>
+      <div class="col-md-8 content-header">
+        <div class="row" style="position: relative;bottom: 15px;">
+          <div class="">
+            <div class="row hiddden">
+              <div class="col-md-4">
+                <div class="panel panel-default"  style="background-color:#fff; opacity:0.7;">
+                  <div class="panel-body">
+                    <p style="color:black; font-size:10px; text-align:center">  Pembayaran Belum Terverifikasi </p>
+                    <hr style="border-color:#000;">
+                    <br>
+                    <h1 style="text-align:center;">5</h1>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="panel panel-default"  style="background-color:#fff; opacity:0.7;">
+                  <div class="panel-body">
+                    <p style="color:black; font-size:10px; text-align:center">  Pembayaran Terverifikasi </p>
+                    <hr style="border-color:#000;">
+                    <br>
+                    <h1 style="text-align:center;">200</h1>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="panel panel-default"  style="background-color:#fff; opacity:0.7;">
+                  <div class="panel-body">
+                    <p style="color:black; font-size:10px; text-align:center">  Pesan Belum Dibalas </p>
+                    <hr style="border-color:#000;">
+                    <br>
+                    <h1 style="text-align:center;">2</h1>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="panel panel-default"  style="background-color:#fff; opacity:0.7;">
+                  <div class="panel-body">
+                    <p style="color:black; font-size:10px; text-align:center">  Jumlah Training Aktif </p>
+                    <hr style="border-color:#000;">
+                    <br>
+                    <h1 style="text-align:center;">3</h1>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="panel panel-default"  style="background-color:#fff; opacity:0.7;">
+                  <div class="panel-body">
+                    <p style="color:black; font-size:10px; text-align:center">  Statistik Pengunjung Halaman </p>
+                    <hr style="border-color:#000;">
+                    <br>
+                    <div class="row">
+                      <div class="col-md-7">
+                        <div id="sparklinedash" style="margin-top: -28px;"></div>
+                      </div>
+                      <div class="col-md-5">
+                        <h3>270</h3>
+                      </div>
+                    </div>
+                    <div class="row" style="margin-top:0px">
+                      <div class="col-md-4">
+                        <span class="badge">
+                          Tahun
+                        </span>
+                      </div>
+                      <div class="col-md-4">
+                        <span class="badge">
+                          Bulan
+                        </span>
+                      </div>
+                      <div class="col-md-4">
+                        <span class="badge">
+                          Minggu
+                        </span>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="panel panel-default"  style="background-color:#fff; opacity:0.7;">
+                  <div class="panel-body">
+                    <p style="color:black; font-size:10px; text-align:center">  Bangku Tersedia/ Tersisa </p>
+                    <hr style="border-color:#000;">
+                    <br>
+                    <h1 style="text-align:center;">14</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="row" style="position:relative; bottom:46px">
+    <div class="container">
+      <div class="col-md-12">
+        <div class="atas">
+          <div class="row">
+            <div class="container" style="
+            line-height: 1px;
+            ">
+            <div class="col-md-1 col-xs-2">
+              <img class="img-circle" src="assets/lsp/images.jpg" width="70" alt="">
+            </div>
+            <div class="col-md-3 col-xs-2">
+              <h3 style="color:#fff">LSP Kopi Kita</h3>
+              <p style="color:#fff;font-size: 17px;">Kopi untuk kita semua.</p>
+            </div>
+            <div class="col-md-4 col-xs-4">
+              <h4 style="color:#fff; font-weight:100; text-align:center">Reputasi</h4>
+
+              <center style="
+              font-size: 35px;
+              ">
+              <span class="fa fa-star" style="color:#fff"></span>
+              <span class="fa fa-star" style="color:#fff"></span>
+              <span class="fa fa-star" style="color:#fff"></span>
+              <span class="fa fa-star" style="color:#fff"></span>
+              <span class="fa fa-star"></span>
+            </center>
+          </div>
+          <div class="col-md-4 col-xs-4">
+            <h4 style="color:#fff; font-weight:100; text-align:center">Favorit</h4>
+            <h1 style="text-align:center; color:#fff; font-weight:300">200</h1>
+          </div>
+          <span class="fa fa-edit" style="position: relative;left: 1061px;bottom: 95px;width: 25px;height: 23px;background-color: #fff;border-radius: 30px;text-align: center;padding: 5px;color: #6b6bea;"></span>
+
+        </div>
+      </div>
+    </div>
+    <div class="bawah">
+      <div class="row">
+        <div class="container" style="
+        font-size: 22px;
+        /* padding: 1px 5px; */
+        display: inline-block;
+        margin-bottom: -25px;
+        ">
+        <div class="col-md-4">
+          <p>Aktif 2 Menit yang Lalu</p>
+        </div>
+        <div class="col-md-2">
+          <p>Bogor</p>
+        </div>
+        <div class="col-md-2">
+          Januari 2018
+        </div>
+        <div class="col-md-4">
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <button type="button" class="primary-btn" style="border-radius:25px;font-weight:100;position: relative;bottom: 40px;height: 36px;padding: 4px;left: 112px;width: 182px;/* margin-bottom: -88px; */" name="button">Kunjungi</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<div class="row">
+  <div class="col-md-4 col-xs-4"style="
+  position: relative;
+  left: 70px;
+  position: relative;
+  bottom: 33px;
+  ">
+  <div id="menu">
+    <table>
+
+      <tr>
+        <td>
+          <img class="img-circle" src="img/Orange.JPG" width="40" height="40">
+          <div class="menu2">
+            <b style="font-size: 18px;color: #000;">Transaksi</b>
+            <a href="#"><p> Menunggu Pembayaran</p></a>
+            <a href="#"><p class="kotak">	Pembayaran Selesai </p></a>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img class="img-circle" src="img/Orange.JPG" width="40" height="40">
+          <div class="menu2">
+            <b style="font-size: 18px;color: #000;">Daftar Training</b>
+            <a href="#"><p> Tambah Training</p></a>
+            <a href="#"><p>	Draft Training  </p></a>
+            <a href="#"><p>	Atur Training  </p></a>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img class="img-circle" src="img/acce22.png" width="40" height="40">
+          <div class="menu2">
+            <b style="font-size: 18px;color: #000;">Daftar Trainer </b>
+            <a href="agenda.html"><p> Tambah Trainer</p></a>
+            <a href="#"><p>	Atur Daftar Trainer </p></a>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img class="img-circle" src="img/acce22.png" width="40" height="40">
+          <div class="menu2">
+            <b style="font-size: 18px;color: #000;">Akun Saya</b>
+            <a href="user_profil.html"><p> Profil</p></a>
+            <a href="#"><p> Ubah Password </p></a>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
+<div class="col-md-8 col-xs-8" style="line-height: 11px;position: relative;bottom: 60px;">
+  <div class="garis"> </div>
+  <h2><b style=" position: relative; top: 30px;left: 150px;"> Pembayaran Selesai </b></h2>
+  <p style="font-size: 16px;display: inline-block;position: relative;left: 150px;">Berikut adalah daftar peserta dengan pembayaran </p>
+  <a href="" style=" color: #009b4c;"> <span class="glyphicon glyphicon-sort-by-alphabet" aria-hidden="true" style="position: relative;margin-left: 235px;height: 50px;margin-right: 15px;font-size: 35px;padding: 8px 11px;width: 50px;background-color: #fefefe;border-radius: 40px;box-shadow: 0px 0px 15px black;"></span></a>
+    <a href="#" style=" color: #009b4c;"><i class="fa fa-bars" style="position: relative;height: 50px;font-size: 35px;padding: 8px 11px;width: 50px;background-color: #fefefe;border-radius: 40px;box-shadow: 0px 0px 15px black;"></i></a>
+    <p style="font-size: 20px;position: relative;left: 150px;">ter-verifikasi</p>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6" style="
+      width: 55%;
+      margin-left: 150px;
+      margin-top: 15px;
+      position: relative;
+      bottom: 54px;
+      "><div class="panel panel-default scroll" style="background-image: url('img/bg/testimoni.png');background-size: cover;background-repeat: no-repeat;">
+        <style>
+          .peserta{
+            height: 150px
+          }
+          .gambar-kiri{
+            display: inline-block;
+          }
+          .text-kanan{
+            background-color: white;
+            height: 128px;
+            width: 80%;
+            position: relative;
+            display: inline-block;
+            border-radius: 15px;
+            left: 104px;
+            padding: 10px 20px;
+            bottom: 128px;
+            z-index: 4;
+          }
+          .penutup{
+            background-color: white;
+            height: 128px;
+            width: 5%;
+            position: relative;
+            display: inline-block;
+            top: 61px;
+            right: 29px;
+            z-index: 3;
+          }
+          .text-kanan > p {
+            display: inline-block;
+          }
+          .kiri{
+            margin-right: 46px;
+          }
+          .kanan{
+            float: right;
+            margin-right: 10px;
+          }
+          .nama{
+            font-weight: bold;
+            position: relative;
+            bottom: 7px;
+          }
+          .paket{
+            font-size: 11px;
+            position: relative;
+            right: 214px;
+            top: 7px;
+          }
+          .hijau{
+            color:#0a9f54;
+            font-weight: bold;
+          }
+          .orange{
+            color: #f08519;
+          }
+          .scroll{
+            height:575px;
+            overflow: scroll;
+          }
+          .head {
+              background-image: url(img/bg/testimoni.png);
+              height: 360px;
+              background-size: 100% !important;
+              position: relative;
+              background-repeat: no-repeat;
+              bottom: -60px;
+              /* filter: blur(5px); */
+              margin-bottom: 128px;
+          }
+        </style>
+        <div class="panel-body" style="position: relative;bottom: 58px;">
+              <div class="peserta">
+                <div class="gambar-kiri">
+                  <img src="img/saputra.jpg" alt="" srcset="" style="margin-top: 1px;height: 128px;border-radius: 15px;">
+                </div>
+                <div class="penutup"></div>
+                <div class="text-kanan">
+                    <p class="kiri hijau">INV SF12361924619</p><p class="kanan"> 22-12-18</p>
+                    <p class="kiri nama">Saputra Hermansyah</p> <a data-toggle="modal" data-target="#myModal"> <i class="fa fa-qrcode" style="float: right;/* margin-right: 10px; */ position: relative;right: 10px;font-size: 22px;background-color: #eeeeef;color: #12a259;"></i></a>
+                    <p class="paket">Paket Mengenal Kopi Indonesia</p>
+                    <p class="kiri hijau">Pembayaran Terverifikasi</p> <p class="kanan hijau">No Peserta 027</p>
+                    <p class="kiri orange">Rp.1.000.000,-</p><a class="kanan" style="color:#0a9f54;text-decoration:none;" data-toggle="modal" data-target="#myModal"> LIHAT DETAIL</a>
+                </div>
+              </div>
+              <div class="peserta">
+                <div class="gambar-kiri">
+                  <img src="img/saputra.jpg" alt="" srcset="" style="margin-top: 1px;height: 128px;border-radius: 15px;">
+                </div>
+                <div class="penutup"></div>
+                <div class="text-kanan">
+                    <p class="kiri hijau">INV SF12361924619</p><p class="kanan"> 22-12-18</p>
+                    <p class="kiri nama">Saputra Hermansyah</p> <a href="#"> <i class="fa fa-qrcode" style="float: right;/* margin-right: 10px; */ position: relative;right: 10px;font-size: 22px;background-color: #eeeeef;color: #12a259;"></i></a>
+                    <p class="paket">Paket Mengenal Kopi Indonesia</p>
+                    <p class="kiri hijau">Pembayaran Terverifikasi</p> <p class="kanan hijau">No Peserta 027</p>
+                    <p class="kiri orange">Rp.1.000.000,-</p><a href="#" class="kanan" style="color:#0a9f54;text-decoration:none;" data-toggle="modal" data-target="#myModal"> LIHAT DETAIL</a>
+                </div>
+              </div>
+              <div class="peserta">
+                <div class="gambar-kiri">
+                  <img src="img/saputra.jpg" alt="" srcset="" style="margin-top: 1px;height: 128px;border-radius: 15px;">
+                </div>
+                <div class="penutup"></div>
+                <div class="text-kanan">
+                    <p class="kiri hijau">INV SF12361924619</p><p class="kanan"> 22-12-18</p>
+                    <p class="kiri nama">Saputra Hermansyah</p> <a href="#"> <i class="fa fa-qrcode" style="float: right;/* margin-right: 10px; */ position: relative;right: 10px;font-size: 22px;background-color: #eeeeef;color: #12a259;"></i></a>
+                    <p class="paket">Paket Mengenal Kopi Indonesia</p>
+                    <p class="kiri hijau">Pembayaran Terverifikasi</p> <p class="kanan hijau">No Peserta 027</p>
+                    <p class="kiri orange">Rp.1.000.000,-</p><a href="#" class="kanan" style="color:#0a9f54;text-decoration:none;" data-toggle="modal" data-target="#myModal"> LIHAT DETAIL</a>
+                </div>
+              </div>
+              <div class="peserta">
+                <div class="gambar-kiri">
+                  <img src="img/saputra.jpg" alt="" srcset="" style="margin-top: 1px;height: 128px;border-radius: 15px;">
+                </div>
+                <div class="penutup"></div>
+                <div class="text-kanan">
+                    <p class="kiri hijau">INV SF12361924619</p><p class="kanan"> 22-12-18</p>
+                    <p class="kiri nama">Saputra Hermansyah</p> <a href="#"> <i class="fa fa-qrcode" style="float: right;/* margin-right: 10px; */ position: relative;right: 10px;font-size: 22px;background-color: #eeeeef;color: #12a259;"></i></a>
+                    <p class="paket">Paket Mengenal Kopi Indonesia</p>
+                    <p class="kiri hijau">Pembayaran Terverifikasi</p> <p class="kanan hijau">No Peserta 027</p>
+                    <p class="kiri orange">Rp.1.000.000,-</p><a href="#" class="kanan" style="color:#0a9f54;text-decoration:none;" data-toggle="modal" data-target="#myModal"> LIHAT DETAIL</a>
+                </div>
+              </div>
+              <div class="peserta">
+                <div class="gambar-kiri">
+                  <img src="img/saputra.jpg" alt="" srcset="" style="margin-top: 1px;height: 128px;border-radius: 15px;">
+                </div>
+                <div class="penutup"></div>
+                <div class="text-kanan">
+                    <p class="kiri hijau">INV SF12361924619</p><p class="kanan"> 22-12-18</p>
+                    <p class="kiri nama">Saputra Hermansyah</p> <a href="#"> <i class="fa fa-qrcode" style="float: right;/* margin-right: 10px; */ position: relative;right: 10px;font-size: 22px;background-color: #eeeeef;color: #12a259;"></i></a>
+                    <p class="paket">Paket Mengenal Kopi Indonesia</p>
+                    <p class="kiri hijau">Pembayaran Terverifikasi</p> <p class="kanan hijau">No Peserta 027</p>
+                    <p class="kiri orange">Rp.1.000.000,-</p><a href="#" class="kanan" style="color:#0a9f54;text-decoration:none;" data-toggle="modal" data-target="#myModal"> LIHAT DETAIL</a>
+                </div>
+              </div>
+              <div class="peserta">
+                <div class="gambar-kiri">
+                  <img src="img/saputra.jpg" alt="" srcset="" style="margin-top: 1px;height: 128px;border-radius: 15px;">
+                </div>
+                <div class="penutup"></div>
+                <div class="text-kanan">
+                    <p class="kiri hijau">INV SF12361924619</p><p class="kanan"> 22-12-18</p>
+                    <p class="kiri nama">Saputra Hermansyah</p> <a href="#"> <i class="fa fa-qrcode" style="float: right;/* margin-right: 10px; */ position: relative;right: 10px;font-size: 22px;background-color: #eeeeef;color: #12a259;"></i></a>
+                    <p class="paket">Paket Mengenal Kopi Indonesia</p>
+                    <p class="kiri hijau">Pembayaran Terverifikasi</p> <p class="kanan hijau">No Peserta 027</p>
+                    <p class="kiri orange">Rp.1.000.000,-</p><a href="#" class="kanan" style="color:#0a9f54;text-decoration:none;" data-toggle="modal" data-target="#myModal"> LIHAT DETAIL</a>
+                </div>
+              </div>
+              <div class="peserta">
+                <div class="gambar-kiri">
+                  <img src="img/saputra.jpg" alt="" srcset="" style="margin-top: 1px;height: 128px;border-radius: 15px;">
+                </div>
+                <div class="penutup"></div>
+                <div class="text-kanan">
+                    <p class="kiri hijau">INV SF12361924619</p><p class="kanan"> 22-12-18</p>
+                    <p class="kiri nama">Saputra Hermansyah</p> <a href="#"> <i class="fa fa-qrcode" style="float: right;/* margin-right: 10px; */ position: relative;right: 10px;font-size: 22px;background-color: #eeeeef;color: #12a259;"></i></a>
+                    <p class="paket">Paket Mengenal Kopi Indonesia</p>
+                    <p class="kiri hijau">Pembayaran Terverifikasi</p> <p class="kanan hijau">No Peserta 027</p>
+                    <p class="kiri orange">Rp.1.000.000,-</p><a href="#" class="kanan" style="color:#0a9f54;text-decoration:none;" data-toggle="modal" data-target="#myModal"> LIHAT DETAIL</a>
+                </div>
+              </div>
+              <div class="peserta">
+                <div class="gambar-kiri">
+                  <img src="img/saputra.jpg" alt="" srcset="" style="margin-top: 1px;height: 128px;border-radius: 15px;">
+                </div>
+                <div class="penutup"></div>
+                <div class="text-kanan">
+                    <p class="kiri hijau">INV SF12361924619</p><p class="kanan"> 22-12-18</p>
+                    <p class="kiri nama">Saputra Hermansyah</p> <a href="#"> <i class="fa fa-qrcode" style="float: right;/* margin-right: 10px; */ position: relative;right: 10px;font-size: 22px;background-color: #eeeeef;color: #12a259;"></i></a>
+                    <p class="paket">Paket Mengenal Kopi Indonesia</p>
+                    <p class="kiri hijau">Pembayaran Terverifikasi</p> <p class="kanan hijau">No Peserta 027</p>
+                    <p class="kiri orange">Rp.1.000.000,-</p><a href="#" class="kanan" style="color:#0a9f54;text-decoration:none;" data-toggle="modal" data-target="#myModal"> LIHAT DETAIL</a>
+                </div>
+              </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<!-- FOOTER -->
+<footer id="footer" class="section section-grey" style="margin-top: -50px;">
+  <!-- container -->
+  <div class="container">
+    <!-- row -->
+    <div class="row">
+      <!-- footer widget -->
+      <div class="col-md-3 col-sm-6 col-xs-6">
+        <div class="footer">
+          <!-- footer logo -->
+          <div class="footer-logo">
+            <a class="logo" href="#">
+              <img src="./img/logo.png" alt="">
+            </a>
+          </div>
+          <!-- /footer logo -->
+
+          <p>sertifa.com adalah platform yang mempertemukan penyedia jasa sertifikasi profesi dengan pihak yang mencari sertifikasi
+            profesi.</p>
+
+          </div>
+        </div>
+        <!-- /footer widget -->
+
+        <!-- footer widget -->
+        <div class="col-md-3 col-sm-6 col-xs-6">
+          <div class="footer">
+            <h3 class="footer-header">Lainnya</h3>
+            <ul class="list-links">
+              <li><a href="#">Tentang Kami</a></li>
+              <li><a href="#">Aturan Pengguna</a></li>
+              <li><a href="#">Kebijakan Privasi</a></li>
+              <li><a href="#">Mitra & Partner</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- /footer widget -->
+
+        <div class="clearfix visible-sm visible-xs"></div>
+
+        <!-- footer widget -->
+        <div class="col-md-3 col-sm-6 col-xs-6">
+          <div class="footer">
+            <h3 class="footer-header">Didukung oleh</h3>
+            <img src="img/lsp/bnsp.png" class="img-responsive"/>
+          </div>
+        </div>
+        <!-- /footer widget -->
+
+        <!-- footer subscribe -->
+        <div class="col-md-3 col-sm-6 col-xs-6">
+          <div class="footer">
+            <h3 class="footer-header">Stay Connected</h3>
+            <!-- footer social -->
+            <ul class="footer-social">
+              <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
+              <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+              <li><a href="#"><i class="fa fa-youtube-square"></i></a></li>
+            </ul>
+            <!-- /footer social -->
+          </div>
+        </div>
+        <!-- /footer subscribe -->
+      </div>
+      <!-- /row -->
+      <hr>
+      <!-- row -->
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2 text-center">
+          <!-- footer copyright -->
+          <div class="footer-copyright">
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | <a href="https://sertifa.com" target="_blank">Sertifa.com</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+          </div>
+          <!-- /footer copyright -->
+        </div>
+      </div>
+      <!-- /row -->
+    </div>
+    <!-- /container -->
+  </footer>
+  <!-- /FOOTER -->
+  <!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- jQuery Plugins -->
+   
+   <script src="js/slick.min.js"></script>
+    <script src="js/nouislider.min.js"></script>
+    <script src="js/jquery.zoom.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/sparkline/jquery.sparkline.min.js"></script>
+    <script src="js/sparkline/jquery.charts-sparkline.js"></script>
+    <script src="js/sparkline/sparkline-active.js"></script>
+    <script>
+      $( function() {
+        $( "#input" ).datepicker();
+        $( "#input2" ).datepicker();
+      } );
+      $(document).ready(function(){
+        $('.a').hide();
+        $('#terapkan').click(function(){
+          $('.a').show();
+          
+        });
+      });
+    </script>
+  </body>
+
+  </html>

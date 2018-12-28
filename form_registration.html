@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <script src="js/jquery.min.js" charset="utf-8"></script>
+      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/bootstrap.min.js" charset="utf-8"></script>
+    <title>Sertifa.com</title>
+    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+		<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		--><script src="calendar/jquery.calendar.js"></script>
+		<link rel="stylesheet" href="calendar/jquery.calendar.css" />
+    <style media="screen">
+
+      @media only screen and (max-width: 991px){
+        #garis{
+          display: none;
+        }
+      }
+      .section.konten{
+        margin-top: 10px;
+      }
+      .image-upload > input{
+        display: none;
+      }
+      .barprog{
+        padding-top:10px;
+      }
+      .content{
+        width: 84px;
+			  height: 84px;
+			  border: 10px solid #17d627;
+			  padding: 2px;
+			  margin: auto
+      }
+      .push{
+        border-radius: 10px;
+        color:black;
+      }
+      .kntn>table{
+        width:90%;
+        margin:auto;
+      }
+      th{
+        padding: 10px; background-color: orange; color:white; font-family: calibri;
+      }
+      td{
+        text-align: center; padding: 10px 0; background-color: #fbf7f7
+      }
+      #red{
+        color:white;
+        background-color:red;
+       }
+      .sambutan{
+          color:#1bc646;
+      }
+      /*
+      h2{
+          color:#1bc646;
+      } */
+      #kanan{
+        background-color: #eeeeef;
+        bottom:0px;
+
+      }
+    </style>
+    <link rel="icon" href="img/favicon.png" type="image/png" sizes="16x16">
+  </head>
+  <body>
+    <div id="header" class="fixed">
+
+			<div class="container">
+				<div class="col-md-9 pull-left">
+					<!-- Logo -->
+					<div class="header-logo">
+						<a class="logo" href="index.html">
+							<img src="./img/logo.png" alt="">
+						</a>
+					</div>
+
+        </div>
+				<div class="col-md-3 pull-right">
+        </div>
+      </div>
+    </div>
+
+	<br><br><br>
+    <div class="section">
+      <div class="row">
+        <div class="container">
+          <div class="col-md-12">
+            <h2 class="sambutan">Hallo Siska, Selamat Datang di sertifa, mohon Lengkapi Data Anda</h2>
+            <form class="" action="index.html" method="post">
+
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label>Tempat Lahir<span style="color:#1bc646">*</span></label>
+                    <input type="text" class="form-control" name="" placeholder="Mis. Bogor">
+                  </div>
+                  <div class="form-group">
+                    <label>Tanggal Lahir<span style="color:#1bc646">*</span></label>
+                    <input type="text" id="tanggal" class="form-control" name="" placeholder="Mis. 08/23/2018"><!--<span class="caret"></span>-->
+                  </div>
+                  <div class="form-group">
+                    <label>Jenis Kelamin<span style="color:#1bc646">*</span></label>
+                    <select class="form-control" name="">
+                      <option value="laki - laki">Laki - Laki</option>
+                      <option value="perempuan">Perempuan</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label>Pendidikan Terakhir<span style="color:#1bc646">*</span></label>
+                    <select class="form-control" name="">
+                      <option value="S1">S1</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label>Jurusan Pendidikan Terakhir<span style="color:#1bc646">*</span></label>
+                    <select class="form-control" name="">
+                      <option value="TIK">Teknik Informatika</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div id="garis" style="width:1px;height: 360px;background-color:#545556;position: absolute;left:0px;"> </div>
+                  <div class="form-group">
+                    <label>Upload Foto</label><br>
+                    <div class="image-upload">
+                      <label for="file-input">
+                        <div class="content">
+                          <img class="push" src="plus.png" alt="" width="60">
+                        </div>
+                      </label>
+                      <input type="file" id="file-input">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label>Buat Sandi Akun<span style="color:#1bc646">*</span></label>
+                    <input type="passowrd" placeholder="Kata Sandi" name="" class="form-control" value="">
+                  </div>
+                  <div class="form-group">
+                    <label>Ulangi Sandi Akun<span style="color:#1bc646">*</span></label>
+                    <input type="passowrd" placeholder="Kata Sandi" name="" class="form-control" value="">
+                  </div>
+                  <!-- <div class="checkbox">
+                    <label>
+                      <input type="checkbox"> Saya Setuju dengan Syarat dan Ketentuan Sertifa.com
+                    </label>
+                  </div> -->
+                  <label class="cc">
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                  </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Saya Setuju dengan Syarat dan Ketentuan Sertifa.com
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer id="footer" class="section section-grey">
+  		<!-- container -->
+  		<div class="container">
+  			<!-- row -->
+        <div class="row">
+          <div class="col-md-8">
+            <div class="barprog">
+              <div class="progress">
+                <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="73" aria-valuemin="0" aria-valuemax="100" style="width: 73%;">
+                  <span class="sr-only">73% Complete</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <a style="margin-top:1px" href="#" class="primary-btn btn-block text-center">Selanjutnya</a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-8">
+            <p class="text-center">Kelengkapan Data</p>
+          </div>
+        </div>
+  			<!-- /row -->
+  		</div>
+  		<!-- /container -->
+  	</footer>
+  	<!-- /FOOTER -->
+    <script>
+    $( function() {
+      $( "#tanggal" ).datepicker();
+    } );
+    </script>
+  </body>
+</html>

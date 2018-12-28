@@ -1,0 +1,131 @@
+.no-padding{
+    padding: 0;
+}
+.no-padding-right{
+    padding-right: 0;
+}
+
+.no-padding-left{
+    padding-left: 0;
+}
+
+
+.footer .list-links li>a:hover,
+.footer .list-links li>a:focus,
+.footer .list-links li.active>a {
+    color: #fff;
+}
+.footer a .fa:hover{
+    color: #fff;
+}
+
+
+/* ======== */
+/* LSP List */
+/* ======== */
+#lsp-list .list .col-md-3{
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #079941;
+    min-height: 155px;
+}
+#lsp-list .banner{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    overflow: hidden;
+}
+#lsp-list .list-top-right{
+    border-top-right-radius: 10px;
+    overflow: hidden;
+}
+#lsp-list .list-bottom-right{
+    border-bottom-right-radius: 10px;
+    overflow: hidden;
+}
+
+/* ======== */
+/* Banner */
+/* ======== */
+#banner{
+    
+    background: url(../img/bg/banner.png);
+    min-height: 130px;
+    background-size: 100% 100%;
+    padding: 50px;
+    font-size: 30px;
+    color: #fff;
+    border-radius: 10px;
+    margin: auto;
+    float: none;
+}
+.dropdown.open>.custom-menu .banner{
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* ================= */
+/* Testimoni Section */
+/* ================= */
+#testimoni{
+    background: url('../img/bg/testimoni.png')
+}
+#testimoni *:focus{
+    outline: none;
+}
+#testimoni .title {
+    text-align: center;
+    color: #fff;
+}
+#testimoni .testimoni-item {
+    display: block;
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
+
+#testimoni .testimoni-item>img {
+    width: 100%;
+}
+    #testimoni .testimoni-item .testimoni-caption {
+        background: #fff;
+        border-radius: 8px;
+        border: 2px solid #f3f3f3;
+        padding: 20px;
+        margin: 0 100px;
+    }
+        #testimoni .testimoni-item .testimoni-caption .avatar {
+            background: #fff;
+            position: absolute;
+            left: 50%;
+            margin-left: -45px;
+            top: -40px;
+            width: 100px;
+            height: 100px;
+            overflow: hidden;
+            border-radius: 50%;
+            border: 2px solid #fff;
+            /* box-shadow */
+            box-shadow: rgba(0, 0, 0, 0.8) 0 0 10px;
+            border-collapse: collapse;
+        }
+        #testimoni .testimoni-item .testimoni-caption .avatar img {
+            width: 100%;
+        }
+        #testimoni .testimoni-item .testimoni-caption .quote {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 70px;
+        }
+    #testimoni .slick-prev,#testimoni  .slick-next {
+        background: none;
+    }
+
+/* =========== */
+/* Search Page */
+/* =========== */
+#search-page.home-wrap{
+    background: #079941;
+}
+    #search-page.home-wrap .search-wrapper {
+        color: #fff;
+    }

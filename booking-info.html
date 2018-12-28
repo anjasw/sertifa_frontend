@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<script src="js/jquery.min.js" charset="utf-8"></script>
+	<script src="js/bootstrap.min.js" charset="utf-8"></script>
+	<title>Sertifa.com</title>
+	<link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+	<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	--><script src="calendar/jquery.calendar.js"></script>
+	<link rel="stylesheet" href="calendar/jquery.calendar.css" />
+	<link rel="icon" href="img/favicon.png" type="image/png" sizes="16x16">
+</head>
+<body>
+	<div id="header" class="fixed">
+
+		<div class="container">
+			<div class="col-md-9 pull-left">
+				<!-- Logo -->
+				<div class="header-logo">
+					<a class="logo" href="index.html">
+						<img src="./img/logo.png" alt="">
+					</a>
+				</div>
+
+			</div>
+			<div class="col-md-3 pull-right">
+				<div class="col-md-3 aaa" >
+					<ul class="header-btns pull-right aaa">
+						<li class="header-menu dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img class="img-circle" width="50" src="img/saputra.jpg	" alt="">
+								 <span class="caret"style="position: absolute;left: 65px;top: 40px; "></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Akun Saya</a></li>
+								<li><a href="#">Logout</a></li>
+							</ul>
+						</li>
+						<!-- Mobile nav toggle-->
+
+						<!-- / Mobile nav toggle -->
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="section konten">
+		<div class="row">
+			<div class="col-md-8 col-sm-6 col-xs-6">
+				<h3 style="margin-bottom: 120px;position: relative;top: 70px;padding: 0px 90px;left: 0px;color: #079941;font-weight: 300;font-size: 30px;">Tambahkan ke Agenda Saya
+					<button type="button" class="primary-btn pull-right" name="button" style="border-radius: 5px;font-weight: normal;height: 36px;padding: 6px;width: 280px;font-size: 24px;">#INV SF12361924619</button> </h3>
+					<div class="kntn">
+						<style>
+							/* // kalender */
+
+							.hari > th{
+								padding: 32px;
+								color: #2aa865;
+								border-spacing: 30px;
+								font-size: 26px;
+								position: relative;
+								top: 70px;
+
+							}
+							.text-orange{
+								color: #f08519;
+							}
+							.tanggal-row-1 > th{
+								padding: 10px;
+							}
+							.space{
+								border-spacing: 32px;
+								position: relative;
+								left: 50px;
+								z-index: 1;
+							}
+							.radius{
+								border: 3px solid #33af70;
+								border-radius: 10px;
+							}
+							.radius2{
+								border: 3px solid #e62129;
+								border-radius: 10px;
+							}
+							.radius3{
+								border: 3px solid #acce22;
+								border-radius: 10px;
+							}
+							.space > tbody > tr >td{
+								padding: 23px 30px;
+							}
+							/* warna */
+
+							.hijau{
+								background-color: #b6b6b7;
+								border-radius:5px;
+							}
+							.orange{
+								background-color: #f08519;
+								color: white;
+								border-radius:5px;
+							}
+							tbody > tr > td > p{
+								position: relative;
+								bottom: 21px;
+								right: 20px;
+								font-weight: bold;
+							}
+							/* //kalender */
+						</style>
+						<div style="z-index: 1;">
+							<h1 style="position: absolute;left: 422px;top: 160px;color: #079941;z-index: 2;">2018</h1>
+							<button class="primary-btn" style="border-radius: 28px;height: 51px;width: 33%;font-size: 29px;padding: 0px;font-weight: 100;text-transform: none;position: absolute;left: 312px;bottom: 652px;z-index: 2;"	><i class="fa fa-caret-left" style="position: relative;right: 65px;"></i>Desember<i class="fa fa-caret-right" style="position: relative;left: 65px;"></i></button>
+						</div>
+						<table class="space">
+							<tr class="hari">
+								<th>S</th>
+								<th>S</th>
+								<th>R</th>
+								<th>K</th>
+								<th>J</th>
+								<th style="color:#f08519;">S</th>
+								<th style="color:#f08519;">M</th>
+							</tr>
+						</table>
+						<table class="space">
+							<tbody>
+								<tr class="tanggal-row-1">
+									<td class="hijau"></td>
+									<td class="hijau"></td>
+									<td class="radius"><p>1</p>
+										<div>
+											<label class="cc" style="position: absolute;left: 305px;top: 40px;z-index: 2;">
+												<input type="checkbox" checked="checked">
+												<span class="checkmark" style="border-radius: 20px;"></span>
+											</label>
+											<button class="primary-btn" style="border-radius: 5px;height: 11px;width: 7.5%;font-size: 10px;padding: 0px;font-weight: 100;text-transform: none;position: absolute;left: 270px;bottom: 495px;">TIK indo...</button>
+										</div>
+									</td>
+									<td class="radius"><p>2</p></td>
+									<td class="radius"><p>3</p></td>
+									<td class="orange radius2"><p>4</p></td>
+									<td class="orange radius2"><p>5</p></td>
+								</tr>
+								<tr>
+									<td class="radius2"><p>6</p></td>
+									<td class="radius2"><p>7</p></td>
+									<td class="radius2"><p>8</p></td>
+									<td class="radius3"><p>9</p>
+										<div>
+											<label class="cc" style="position: absolute;left: 422px;top: 153px;z-index: 2;">
+												<input type="checkbox" checked="checked">
+												<span class="checkmark2" style="border-radius: 20px;"></span>
+											</label>
+											<button class="hijau-kuning" style="border-radius: 5px;height: 11px;width: 7.5%;font-size: 10px;padding: 0px;font-weight: 100;text-transform: none;position: absolute;left: 385px;bottom: 382px;">TIK indo...</button>
+										</div>
+									</td>
+									<td class="radius3"><p>10</p></td>
+									<td class="orange radius2"><p>11</p></td>
+									<td class="orange radius2"><p>12</p></td>
+								</tr>
+								<tr>
+									<td class="radius2"><p>13</p></td>
+									<td class="radius2"><p>14</p></td>
+									<td class="radius2"><p>15</p></td>
+									<td class="radius2"><p>16</p></td>
+									<td class="radius2"><p>17</p></td>
+									<td class="orange radius2"><p>18</p></td>
+									<td class="orange radius2"><p>19</p></td>
+								</tr>
+								<tr>
+									<td class="radius2"><p>20</p></td>
+									<td class="radius2"><p>21</p></td>
+									<td class="radius2"><p>22</p></td>
+									<td class="radius2"><p>23</p></td>
+									<td class="radius2"><p>24</p></td>
+									<td class="orange radius2"><p>25</p></td>
+									<td class="orange radius2"><p>26</p></td>
+								</tr>
+								<tr>
+									<td class="radius2"><p>27</p></td>
+									<td class="radius2"><p>28</p></td>
+									<td class="radius2"><p>29</p></td>
+									<td class="radius2"><p>30</p></td>
+									<td class="radius2"><p>31</p></td>
+									<td class="hijau"></td>
+									<td class="hijau"></td>
+								</tr>
+							</tbody>
+						</table>
+						<style>
+							.circle-group{
+								position: absolute;
+								width: 100%;
+								left: 11%;
+								bottom: -25px;
+							}
+							.lingkaran{
+								width: 2%;
+								height: 18px;
+								border-radius: 38px;
+							}
+							.lingkaran1{
+								border: 2px solid #009b4c;
+								display: inline-block;
+							}
+							.lingkaran2{
+								border: 2px solid #b4d336;
+								display: inline-block;
+							}
+							.lingkaran3{
+								border: 2px solid #e62129;
+								display: inline-block;
+							}
+							.text-lingkaran1{
+								display: inline-block;
+								font-size: 20px;
+								padding-left: 8px;
+								margin-right: 20px;
+							}
+							.text-lingkaran2{
+								display: inline-block;
+								font-size: 20px;
+								padding-left: 8px;
+								margin-right: 20px;
+							}
+							.text-lingkaran3{
+								display: inline-block;
+								font-size: 20px;
+								padding-left: 8px;
+								margin-right: 20px;
+							}
+						</style>
+						<div class="circle-group">
+							<div class="lingkaran lingkaran1"></div><p class="text-lingkaran1">Opsi Waktu Seminar</p>
+							<div class="lingkaran lingkaran2"></div><p class="text-lingkaran2">Opsi Waktu Ujian</p>
+							<div class="lingkaran lingkaran3"></div><p class="text-lingkaran3">Tidak Tersedia</p>
+						</div>
+					</div>
+				</div>
+				<style>
+					#kanan{
+						background-color: #eeeeef;
+						position: relative;
+						top: 30px;
+						height: 903px;
+						/* z-index: -1; */
+					}
+					.text-kanan{
+						text-align: center;
+						position: relative;
+						top: 40px;
+						font-size: 20px;
+					}
+					.text-bawah{
+						position: relative;
+						padding: 9px 65px;
+						font-size: 17px;
+						line-height: 20px;
+					}
+					.text2{
+						position: relative;
+						top: 40px;
+						margin-bottom: 67px;
+					}
+					.jarak{
+						position: relative;
+						right: 60px;
+						margin-bottom: 20px;
+					}
+					.lagi{
+						margin-bottom: 30px;
+					}
+					.kotak-hijau{
+						height: 25px;
+						width: 8%;
+						background-color: #079941;
+						border-radius: 7px;
+					}
+					.text-kiri{
+						text-align: left;
+						position: relative;
+						bottom: 17px;
+						left: 42px;
+					}
+					.size{
+						font-size: 32px;
+						position: relative;
+						right: 27px;
+						top: 15px;
+					}
+				</style>
+				<div class="col-md-4 col-sm-6 col-xs-6" id="kanan">
+					<div class="text-kanan">
+						<p> Diselenggarakan oleh</p>
+						<img src="img/lsp/lsptik_dewe.png" class="img-circle" style="margin-bottom: 25px;border-radius: 50%;height: 80px;width: 25%;border: 1px solid;">
+						<div class="text-bawah">
+							<p>Seminar dilakukan pada tanggal1,2 dan 3. Ujian Akan dilakukan pada Tanggal 9 dan 10.</p>
+							<h2 class="text-left text2"><b>Rincian</b></h2>
+							<p class="text-left"> <b>Pengenalan Perangkat Lunak</b> </p>
+							<p class="jarak"> Rp 250.000,-</p>
+							<p class="text-left"> <b>Ujian Pengenalan Perangkat Lunak</b> </p>
+							<p class="jarak"> Rp 250.000,-</p>
+							<p class="text-left"> <b>Diskon Promo</b> </p>
+							<p class="jarak lagi" style="color:red;"> Rp -50.000,-</p>
+							<div class="kotak-hijau"></div>
+							<p class="text-kiri"> Bayar Hanya DP saja</p>
+							<p class="text-kiri">(5% dari total)</p>
+							<p class="text-kiri">pelunasan sebelum 10-12-18</p>
+							<p class="text-left"> <b>TOTAL BAYAR:</b> </p>
+							<p class="jarak size"> <b>Rp 450.000,-</b> </p>
+						</div>
+						<a href="#"> <button type="button" class="primary-btn pull-right" name="button" style="border-radius: 5px;/* font-weight: normal; */height: 50px;padding: 6px;width: 265px;font-size: 17px;position: relative;top: 30px;right: 100px;border: 1px solid #079941;">LANJUT KE PEMBAYARAN</button></a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- FOOTER -->
+		<footer id="footer" class="section section-grey">
+			<!-- container -->
+			<div class="container">
+				<!-- row -->
+				<div class="row">
+					<!-- footer widget -->
+					<div class="col-md-3 col-sm-6 col-xs-6">
+						<div class="footer">
+							<!-- footer logo -->
+							<div class="footer-logo">
+								<a class="logo" href="#">
+									<img src="./img/logo.png" alt="">
+								</a>
+							</div>
+							<!-- /footer logo -->
+
+							<p>sertifa.com adalah platform yang mempertemukan penyedia jasa sertifikasi profesi dengan pihak yang mencari sertifikasi
+								profesi.</p>
+
+							</div>
+						</div>
+						<!-- /footer widget -->
+
+						<!-- footer widget -->
+						<div class="col-md-3 col-sm-6 col-xs-6">
+							<div class="footer">
+								<h3 class="footer-header">Lainnya</h3>
+								<ul class="list-links">
+									<li><a href="#">Tentang Kami</a></li>
+									<li><a href="#">Aturan Pengguna</a></li>
+									<li><a href="#">Kebijakan Privasi</a></li>
+									<li><a href="#">Mitra & Partner</a></li>
+									<li><a href="#">Blog</a></li>
+								</ul>
+							</div>
+						</div>
+						<!-- /footer widget -->
+
+						<div class="clearfix visible-sm visible-xs"></div>
+
+						<!-- footer widget -->
+						<div class="col-md-3 col-sm-6 col-xs-6">
+							<div class="footer">
+								<h3 class="footer-header">Didukung oleh</h3>
+								<img src="img/lsp/bnsp.png" class="img-responsive"/>
+							</div>
+						</div>
+						<!-- /footer widget -->
+
+						<!-- footer subscribe -->
+						<div class="col-md-3 col-sm-6 col-xs-6">
+							<div class="footer">
+								<h3 class="footer-header">Stay Connected</h3>
+								<!-- footer social -->
+								<ul class="footer-social">
+									<li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+									<li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
+									<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+									<li><a href="#"><i class="fa fa-youtube-square"></i></a></li>
+								</ul>
+								<!-- /footer social -->
+							</div>
+						</div>
+						<!-- /footer subscribe -->
+					</div>
+					<!-- /row -->
+					<hr>
+					<!-- row -->
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 text-center">
+							<!-- footer copyright -->
+							<div class="footer-copyright">
+								<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+								Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | <a href="https://sertifa.com" target="_blank">Sertifa.com</a>
+								<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+							</div>
+							<!-- /footer copyright -->
+						</div>
+					</div>
+					<!-- /row -->
+				</div>
+				<!-- /container -->
+			</footer>
+			<!-- /FOOTER -->
+		</body>
+		</html>

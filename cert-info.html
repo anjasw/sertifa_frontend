@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+	<!-- Slick -->
+	<link type="text/css" rel="stylesheet" href="css/slick.css" />
+	<link type="text/css" rel="stylesheet" href="css/slick-theme.css" />
+	
+	<!-- nouislider -->
+	<link type="text/css" rel="stylesheet" href="css/nouislider.min.css" />
+	
+	<!-- Font Awesome Icon -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	
+	<!-- Custom stlylesheet -->
+	<link type="text/css" rel="stylesheet" href="css/style.css" />
+	<style media="screen">
+		.kepala{
+			background: url('assets/bg-asset/komputasi.jpg'); background-size:100% !important; background-repeat:no-repeat; height:427px
+		}
+		.bb{
+			display: none
+		}
+		.pnl{
+			margin-bottom:20px;
+			border:0px solid transparent;
+			border-radius:4px;
+			-webkit-box-shadow:0 1px 1px rgba(0,0,0,.05);
+			box-shadow:0 1px 1px rgba(0,0,0,.05)
+		}
+		.pnl-body{
+			padding:15px
+		}
+		.pnl-heading{
+			padding:10px 10px;
+			background-color: #1c7b0a;
+			
+			border-bottom:1px solid transparent;
+			border-top-left-radius:3px;
+			border-top-right-radius:3px
+		}
+		.pnl-default{
+		}
+		.pnl>.pnl-default{
+			color:#333;
+			border-color:#fff
+		}
+		.pnl-default>.pnl-heading+.pnl-collapse>.pnl-body{
+			border-top-color:#ddd
+		}
+		.pnl-default>.pnl-heading .badge{
+			color:#f5f5f5;
+			background-color:#333
+		}
+		.pnl-default>.pnl-footer+.pnl-collapse>.pnl-body{
+			border-bottom-color:#ddd
+		}
+		.garis{
+			width: 1px; height: 392px; background-color: #fff; position: absolute; left: -1px;top: 14px;
+		}
+		#pesan{
+			display: none
+		}
+		@media only screen and (max-width: 991px){
+			.garis{
+				display:none
+			}
+			.bb{
+				display: inline;
+			}
+			.kepala{
+				background: url('assets/bg-asset/komputasi.jpg');
+				background-size:100% !important;
+				background-repeat:no-repeat;
+				height:500px
+			}
+			#ssc{
+				display: none
+			}
+			.aaa{
+				display: none
+			}
+			#q{
+				display:none;
+			}
+			#pesan{
+				display: inline;
+			}
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<div id="header" class="fixed">
+			<div class="container">
+				<div class="col-md-9 pull-left">
+					<!-- Logo -->
+					<div class="header-logo">
+						<a class="logo" href="index.html">
+							<img src="./img/logo.png" alt="">
+						</a>
+					</div>
+					<div class="header-search">
+						
+						<div class="row" id="ssc">
+							<div class="col-md-2">
+								<ul class="category-list program-categories">
+									<li class="dropdown mega-dropdown full-width">
+										<a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">Kategori <i class="fa fa-caret-down"></i></a>
+										<div class="custom-menu">
+											<div class="row hidden-sm hidden-xs">
+												<!-- kategori -->
+												<div class="col-md-3 col-sm-6">
+													<a class="banner banner-1" href="#">
+														<img src="./img/kategori/kat-otomotif.png" alt="">
+														<div class="banner-caption text-center">
+															<h2 class="white-color">Otomotif</h2>
+														</div>
+													</a>
+												</div>
+												<div class="col-md-3 col-sm-6">
+													<a class="banner banner-1" href="#">
+														<img src="./img/kategori/kat-tekno.png" alt="">
+														<div class="banner-caption text-center">
+															<h2 class="white-color">Teknologi</h2>
+														</div>
+													</a>
+												</div>
+												<div class="col-md-3 col-sm-6">
+													<a class="banner banner-1" href="#">
+														<img src="./img/kategori/kat-pharma.png" alt="">
+														<div class="banner-caption text-center">
+															<h2 class="white-color">Farmasi</h2>
+														</div>
+													</a>
+												</div>
+												<div class="col-md-3 col-sm-6">
+													<a class="banner banner-1" href="#">
+														<img src="./img/kategori/kat-migas.png" alt="">
+														<div class="banner-caption text-center">
+															<h2 class="white-color">Migas</h2>
+														</div>
+													</a>
+												</div>
+											</div>
+											<div class="row hidden-sm hidden-xs">
+												<!-- kategori -->
+												<div class="col-md-3 col-sm-6">
+													<a class="banner banner-1" href="#">
+														<img src="./img/kategori/kat-otomotif.png" alt="">
+														<div class="banner-caption text-center">
+															<h2 class="white-color">Otomotif</h2>
+														</div>
+													</a>
+												</div>
+												<div class="col-md-3 col-sm-6">
+													<a class="banner banner-1" href="#">
+														<img src="./img/kategori/kat-tekno.png" alt="">
+														<div class="banner-caption text-center">
+															<h2 class="white-color">Teknologi</h2>
+														</div>
+													</a>
+												</div>
+												<div class="col-md-3 col-sm-6">
+													<a class="banner banner-1" href="#">
+														<img src="./img/kategori/kat-pharma.png" alt="">
+														<div class="banner-caption text-center">
+															<h2 class="white-color">Farmasi</h2>
+														</div>
+													</a>
+												</div>
+												<div class="col-md-3 col-sm-6">
+													<a class="banner banner-1" href="#">
+														<img src="./img/kategori/kat-migas.png" alt="">
+														<div class="banner-caption text-center">
+															<h2 class="white-color">Migas</h2>
+														</div>
+													</a>
+												</div>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<form class="col-md-10" action="search-page.html">
+								<div class="row">
+									<div class="col-md-12">
+										<div class="input-group">
+											<input class="form-control search-input" type="text" name="q" placeholder="Cari Sertifikasi Program">
+											
+											<div class="input-group-btn">
+												<select tabindex="-1" class="form-control search-categories" name="kategori" style="background-color: #0c7e46; color: white;">
+													<option>Kota</option>
+													<option value="1">Bogor</option>
+													<option value="1">Bekasi</option>
+													<option value="1">Bandung</option>
+													<option value="1">Depok</option>
+												</select>
+												<button tabindex="-1" class="btn btn-default search-btn"><i class="fa fa-search" style="color: white;"></i></button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+					<!-- /Search -->
+				</div>
+				<div class="col-md-3 aaa" >
+					<ul class="header-btns pull-right aaa">
+						<!-- Calendar -->
+						<li class="header-account dropdown default-dropdown">
+							<div class="dropdown-toggle" role="button" data-toggle="dropdown" aria-expanded="true">
+								<div class="header-btns-icon">
+									<i class="fa fa-calendar"></i>
+								</div>
+							</div>
+							<ul class="custom-menu">
+								<li>
+									<p class="font-header">Agenda Saya</p>
+									<ul class="timeline">
+										<li>
+											<span class="fa fa-check-circle check" aria-hidden="true" style="position: absolute;top: 0px;left: 195px;color: #079941;background-color: white;border-radius: 50%;"></span>
+											<p class="small-f-h fh-top">22 Desember 2018</p>
+											<button class="primary-btn" style="border-radius: 5px;height: 28px;width: 28%;padding: 0px;font-weight: 100;text-transform: none;position: absolute;left: 227px;bottom: 52px;">Detail</button>
+											<p class="font-header fh-bottom">Sertifikasi Kopi</p>
+											<hr style="border-color: #8d7569;position: relative;bottom: 40px;right: 7px;width: 94%;">
+										</li>
+									</ul>
+									<ul class="timeline2">
+										<li>
+											<span class="fa fa-check-circle check" aria-hidden="true" style="position: absolute;top: 0px;left: 195px;color: #079941;background-color: white;border-radius: 50%;"></span>
+											<p class="small-f-h fh-top">22 Desember 2018</p>
+											<button class="primary-btn" style="border-radius: 5px;height: 28px;width: 28%;padding: 0px;font-weight: 100;text-transform: none;position: absolute;left: 227px;bottom: 52px;">Detail</button>
+											<p class="font-header fh-bottom">Sertifikasi Barista</p>
+											<hr style="border-color: #8d7569;position: relative;bottom: 40px;right: 7px;width: 94%;">
+										</li>
+									</ul>
+									<ul class="timeline3">
+										<li>
+											<span class="fa fa-check-circle check" aria-hidden="true" style="position: absolute;top: 0px;left: 195px;color: #079941;background-color: white;border-radius: 50%;"></span>
+											<p class="small-f-h fh-top">22 Desember 2018</p>
+											<button class="warning-btn" style="border-radius: 5px;height: 28px;width: 28%;padding: 0px;font-weight: 100;text-transform: none;position: absolute;left: 227px;bottom: 52px;">Bayar</button>
+											<p class="font-header fh-bottom">Sertifikasi Barista</p>
+											<hr style="border-color: #8d7569;position: relative;bottom: 40px;right: 36px;width: 107%;">
+										</li>
+									</ul>
+									<li>
+										<div>
+											<h2 style="position: absolute;left: 150px;top: 190px;color: #079941;z-index: 2;">2018</h2>
+											<button class="primary-btn" style="border-radius: 28px;height: 25px;width: 35%;font-size: 17px;padding: 0px;font-weight: 100;text-transform: none;position: absolute;left: 120px;bottom: 295px; z-index:2;"><i class="fa fa-caret-left" style="position: relative;right: 10px;	z-index: 2;"></i>Desember<i class="fa fa-caret-right" style="position: relative;left: 10px;"></i></button>
+										</div>
+										<table class="nav-space">
+											<tr class="nav-hari">
+												<th>S</th>
+												<th>S</th>
+												<th>R</th>
+												<th>K</th>
+												<th>J</th>
+												<th style="color:#f08519;">S</th>
+												<th style="color:#f08519;">M</th>
+											</tr>
+										</table>
+										<table class="nav-space">
+											<tbody>
+												<tr>
+													<td class="nav-hijau"></td>
+													<td class="nav-hijau"></td>
+													<td class="nav-radius"><p>1</p>
+														<div>
+															<button class="primary-btn" style="border-radius: 5px;height: 11px;width: 3.5%;font-size: 10px;padding: 0px;font-weight: 100;text-transform: none;position: absolute;left: 122px;bottom: 190px;"></button>
+														</div>
+													</td>
+													<td class="nav-radius"><p>2</p></td>
+													<td class="nav-radius"><p>3</p></td>
+													<td class="nav-orange"><p>4</p></td>
+													<td class="nav-orange"><p>5</p></td>
+												</tr>
+												<tr>
+													<td class="nav-radius"><p>6</p></td>
+													<td class="nav-radius"><p>7</p></td>
+													<td class="nav-radius"><p>8</p></td>
+													<td class="nav-radius"><p>9</p>
+														<div>
+															<button class="nav-hijau-kuning" style="border-radius: 5px;height: 11px;width: 3.5%;font-size: 10px;padding: 0px;font-weight: 100;text-transform: none;position: absolute;left: 168px;bottom: 190px;"></button>
+														</div>
+													</td>
+													<td class="nav-radius"><p>10</p></td>
+													<td class="nav-orange"><p>11</p></td>
+													<td class="nav-orange"><p>12</p></td>
+												</tr>
+												<tr>
+													<td class="nav-radius"><p>13</p></td>
+													<td class="nav-radius"><p>14</p></td>
+													<td class="nav-radius"><p>15</p></td>
+													<td class="nav-radius"><p>16</p></td>
+													<td class="nav-radius"><p>17</p></td>
+													<td class="nav-orange"><p>18</p></td>
+													<td class="nav-orange"><p>19</p></td>
+												</tr>
+												<tr>
+													<td class="nav-radius"><p>20</p></td>
+													<td class="nav-radius"><p>21</p></td>
+													<td class="nav-radius"><p>22</p>
+														<div>
+															<button class="primary-btn" style="border-radius: 5px;height: 11px;width: 3.5%;font-size: 10px;padding: 0px;font-weight: 100;text-transform: none;position: absolute;left: 123px;bottom: 57px;"></button>
+														</div>
+													</td>
+													<td class="nav-radius"><p>23</p></td>
+													<td class="nav-radius"><p>24</p></td>
+													<td class="nav-orange"><p>25</p></td>
+													<td class="nav-orange"><p>26</p></td>
+												</tr>
+												<tr>
+													<td class="nav-radius"><p>27</p>
+														<div>
+															<button class="primary-btn" style="border-radius: 5px;height: 11px;width: 3.5%;font-size: 10px;padding: 0px;font-weight: 100;text-transform: none;position: absolute;left: 123px;bottom: 14px;"></button>
+														</div>
+													</td>
+													<td class="nav-radius"><p>28</p></td>
+													<td class="nav-radius"><p>29</p>
+														<div>
+															<button class="warning" style="border-radius: 5px;height: 11px;width: 3.5%;font-size: 10px;padding: 0px;font-weight: 100;text-transform: none;position: absolute;left: 31px;bottom: 14px;"></button>
+														</div>
+													</td>
+													<td class="nav-radius"><p>30</p></td>
+													<td class="nav-radius"><p>31</p></td>
+													<td class="nav-hijau"></td>
+													<td class="nav-hijau"></td>
+												</tr>
+											</tbody>
+										</table>
+										
+										<a href="agenda.html"><button class="primary-btn" style="border-radius: 5px;height: 28px;width: 38%;padding: 0px;font-weight: 100;text-transform: none;position: absolute;left: 210px;bottom: 16px;">Selengkapnya</button></a>
+									</li>
+								</ul>
+							</li>
+							<!-- /Calendar -->
+							<!-- pemberitahuan -->
+							<li class="header-account dropdown default-dropdown">
+								<div class="dropdown-toggle" role="button" data-toggle="dropdown" aria-expanded="true">
+									<div class="header-btns-icon">
+										<i class="fa fa-bell"></i>
+									</div>
+								</div>
+								<ul class="custom-menu2">
+									<li>
+										<p class="font-header"style="margin-bottom: 21px;">Notifikasi</p>
+										<ul style="position: absolute;">
+											<li>
+												<p class="small-f-h fh-top">22 Desember 2018</p>
+												<button class="primary-btn" style="border-radius: 5px;height: 28px;width: 45%;padding: 0px;font-weight: 100;text-transform: none;position: absolute;left: 187px;bottom: 62px;">Baca</button>
+												<p class="font-header fh-bottom">Kamu terdaftar Sertifikasi ... </p>
+												<hr style="border-color: #8d7569;position: relative;bottom: 40px;right: 0px;width: 153%;">
+											</li>
+										</ul>
+										<ul style="position: absolute;top: 110px;">
+											<li>
+												<p class="small-f-h fh-top">22 Desember 2018</p>
+												<button class="primary-btn" style="border-radius: 5px;height: 28px;width: 45%;padding: 0px;font-weight: 100;text-transform: none;position: absolute;left: 186px;bottom: 62px;">Baca</button>
+												<p class="font-header fh-bottom">Kamu terdaftar Sertifikasi ... </p>
+												<hr style="border-color: #8d7569;position: relative;bottom: 40px;right: 0px;width: 153%;">
+											</li>
+										</ul>
+										<ul style="position: absolute;top: 160px;">
+											<li>
+												<p class="small-f-h fh-top">22 Desember 2018</p>
+												<button class="primary-btn" style="border-radius: 5px;height: 28px;width: 42%;padding: 0px;font-weight: 100;text-transform: none;position: absolute;left: 186px; bottom: 61px;">Baca</button>
+												<p class="font-header fh-bottom">Selesaikan Pembayaran Se... </p>
+												<hr style="border-color: #8d7569;position: relative;bottom: 40px;right: 0px;width: 150%;">
+											</li>
+											<a href="#"><button class="primary-btn" style="border-radius: 5px;height: 28px;width: 61%;padding: 0px;font-weight: 100;text-transform: none;position: absolute;left: 150px;top: 40px;">Selengkapnya</button></a>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="header-menu dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img class="img-circle" width="50" src="img/saputra.jpg" alt=""> <span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="#">Akun Saya</a></li>
+									<li><a href="#">Logout</a></li>
+								</ul>
+							</li>
+							
+							<!-- Mobile nav toggle-->
+							
+							<!-- / Mobile nav toggle -->
+						</ul>
+						
+					</div>
+					
+				</li>
+				<!-- <div class="col-md-3 bb pull-right">
+					<li class="nav-toggle">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img class="img-circle" width="50" src="Web Image Assets/bg-asset/cita citata.png" alt=""> <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Akun Saya</a></li>
+							<li><a href="#">Logout</a></li>
+						</ul>
+					</li>
+				</div> -->
+			</div>
+			<!-- header -->
+		</div>
+		<!-- container -->
+		
+	</header>
+	
+	<div class="section">
+		<div class="row" style="background-color:#2a992b">
+			<ol class="breadcrumb container" style="padding-left: 33px; text-decoration:none;">
+				<li><a href="active">Branda</a></li>
+				<li><a href="active">Kategori</a></li>
+				<li><a href="active">Teknologi</a></li>
+				<li><a href="active">Pengujian Prangkat LUnak</a></li>
+			</div>
+		</ol>
+		<div class="row" style="margin-top:0px">
+			<div class="col-md-12 col-sm-12 col-xs-12 kepala">
+				<div class="container">
+					<div class="col-md-8 col-sm-12 col-xs-12">
+						<div class="row">
+							<div class="col-md-6 col-sm-6 col-xs-6">
+								<h1 style="color:#fff; font-weight:700; margin-top:50px">PENGUJIAN <br> PERANGKAT <br> LUNAK</h1>
+								<h2 style="color:#16a806; font:Arial">Joko Prambodo, M.Kom</h2>
+								
+							</div>
+							<div class="col-md-6 col-sm-6 col-xs-6">
+								<p style="background-color:orange; margin-top:50px; float:right; padding:10px; font-size:20px; width:300px; border-radius:3px;">Rp. 250.000 1 Sesi</p><br>
+								<p style="color:#fff; font-size:24px; padding-right:30px; float:right">12:00 - 17:00</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12 col-sm-12 col-xs-12">
+								<p style="color:#fff; font-size:18px">Pelajari cara menemukan bug dan cacat perangkat lunak menggunakan teknik pengujian terbaru.</p><span class="fa fa-heart-o" aria-hidden="true" style="z-index: 45;position: absolute;font-size: 38px;background-color: #eeeeef;color: #079941;height: 50px;width: 50px;right: 40px;padding: 8px 6px;border-radius: 50px;box-shadow: 0px 0px 10px black;"></span>
+								<div id="pesan" class="pnl pnl-default"  style="background-color:#1c7b0a; color:#fff">
+									<div class="pnl-heading text-center"><span class="fa fa-calendar pull-left"></span> 12 - 14 Januari 2019 <span class="fa fa-caret-down pull-right"></span></div>
+									<div class="pnl-body" style="background-color:#1c7b0a">
+										<button type="button" name="button" class="btn btn-block btn-lg" style="font-weight:700;background-color: #2a6013;color: #fff;">PESAN SEKARANG</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="q" class="col-md-4 col-sm-4 col-xs-4">
+						<div class="garis"> </div>
+						<div class="row">
+							<div class="container">
+								<div class="col-md-5">
+									<h3 style="color:#fff; margin-top:10px; font-weight:100" class="text-center">Diselenggarakan Oleh</h3>
+									<div class="text-center">
+										<img class="img-circle" src="tik.jpg" width="100" alt="">
+										<!-- <span class="glyphicon glyphicon-ok-circle" style="background-color:green; color:#fff; border-radius:15px"></span> -->
+										<img class="img-circle" src="assets/misc/little-tick.png" width="30" style="margin-left: -31px;margin-top: 67px;" alt="">
+										<br><br><br>
+										<h4 class="text-center" style="font-weight:100; color:#000">Sesuaikan tangal, dan pesan </h4>
+										<br>
+										<div class="pnl pnl-default"  style="background-color:#1c7b0a; color:#fff">
+											<div class="pnl-heading"><span class="fa fa-calendar pull-left"></span> 12 - 14 Januari 2019 <span class="fa fa-caret-down pull-right"></span></div>
+											<div class="pnl-body" style="background-color:#1c7b0a">
+												<button type="button" name="button" class="btn btn-block btn-lg" style="font-weight:700;background-color: #2a6013;color: #fff;">PESAN SEKARANG</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="section">
+		<div class="row">
+			<div class="container">
+				<div class="col-md-8" style="z-index: 0;">
+					<div class="panel panel-default" style="border-radius: 25px;">
+						<div class="panel-body" style="height: 1378px;">
+							<h2 style="color: #009b4c;">Ringkasan Materi</h2>
+							<p>Ingin mendapatkan kemampuan pengujian perangkat lunak untuk memulai karir atau apakah Anda seorang pengembang perangkat lunak yang ingin meningkatkan kempuan pengujian unit anda ? Kursus ini, bagian dari program pengujian Perangakat Lunak dan Verifikasi MikroMaster, akan memberikan keterampilan penting yang anda butuhkan untuk sukses. <br><br> Perangkat lunak harus diuji untuk bug dan memastikan produk memenuhi persyaratan dan menghasilkan hasil yang diinginkan. Pengujian perangakat lunak sangat penting untuk menyediakan produk berkualitas. <br><br> Pelajari teknik Software Testers dan Quality Assurance Engineers gunakan tiap hari, yang dapat diterapkan ke bahasa pemrograman dan perangkat lunak pengujian. <br> <br> Tidak Diperlukan pengetahuan pemrograman sebelumnya. Kursus in akan menggunakan java dan JUnit, namun, untuk contoh dan tugas. <br><br> Kursis ini merupakan bagian dari pengujian Perangkat Lunak dan program Verifikasi MicroMaster dari UMUC. Setelah menyelesaikan program dan menerima sertifikat MicroMaster yang Terverifikasi, pelajar kemudian dapat beralih ke program master UMUC penuh di Teknology Informasi dengan spesialisasi dalam Rekayasa Perangkat Lunak tanpa proses aplikasi atau pengujian apa pun. Luhat Halaman Program MicroMaster untuk lebih lanjut.
+							</p>
+							<br>
+							<h3 style="font-weight:400; color:#0a9948">Jadwal</h3>
+							<ul class="timeline">
+								<li>
+									<p class="small-f-h fh-top"><span style="font-weight:200; font-size:20px; color:#0a9948">Hari 1</span> <br>Kembangkan, Dokumentasikan, dan laksanakan uji Perangkat Lunak </p>
+								</li>
+								<br>
+							</ul>
+							<ul class="timeline2">
+								<li>
+									<p class="small-f-h fh-top"><span style="font-weight:200; font-size:20px; color:#0a9948">Hari 2</span> <br>Buat tes perangkat lunak untuk memenuhi tujuan </p>
+								</li>
+								<br>
+							</ul>
+							<ul class="timeline3">
+								<li>
+									<p class="small-f-h fh-top"><span style="font-weight:200; font-size:20px; color:#0a9948">Hari 3</span> <br>Identifikasi jenis cacat perangkat lunak </p>
+								</li>
+								<br>
+							</ul>
+							<h3 style="font-weight:400; margin-bottom:100px; color:#0a9948; position: relative;bottom: 85px;">Pemateri</h3>
+							
+							<div class="row">	
+								<div class="col-md-5 pemateri text-center"> 
+									<div>
+										<img src="img/saputra.JPG" class="img-circle" style="	position: absolute;bottom: 135px;height: 95px;width: 30%;right: 190px;">
+									</div>
+									<p>Prof. Mustarto, MM</p>
+									<div>
+										<p>Ketua Program Rekayasa</p>
+										<p>Perangkat Lunak Universitas</p>
+										<p>Maryland</p>
+									</div>
+									<a href="#"><p>Baca Selengkapnya</p></a>
+								</div>
+								<div class="col-md-5 pemateri text-center"> 
+									<div>
+										<img src="img/saputra.JPG" class="img-circle" style="	position: absolute;bottom: 135px;height: 95px;width: 30%;right: 190px;">
+									</div>
+									<p>Prof. Mustarto, MM</p>
+									<div>
+										<p>Ketua Program Rekayasa</p>
+										<p>Perangkat Lunak Universitas</p>
+										<p>Maryland</p>
+									</div>
+									<a href="#"><p>Baca Selengkapnya</p></a>
+								</div>
+								<a href="#"> <span class="fa fa-caret-right icon" aria-hidden="true"></span></a>
+							</div>
+							<style>
+								.icon{
+									z-index: 45;
+									position: absolute;
+									font-size: 72px;
+									background-color: #eeeeef;
+									color: #079941;
+									height: 87px;
+									width: 90px;
+									right: 40px;
+									padding: 13px 10px;
+									border-radius: 50px;
+									box-shadow: 0px 0px 10px black;
+								}
+								.size{    
+									font-size: 17px;
+									position: relative;
+									bottom: 120px;
+								}
+								.jarak{
+									margin-right: 15px;
+								}
+								.poin{
+									color: #079941;
+									font-weight: bold;
+									position: relative;
+									top: 15px;
+								}
+							</style>
+							<div class="size">
+								<p style="color: #079941;font-size: 27px;">Kenapa harus memilih paket sertifikasi di sertia.com</p>
+								<table>
+									<tr>
+										<td><img class="img-circle jarak" src="img/hijau.PNG" width="40" height="40"></td>
+										<td>
+											<p class="poin">Mudah</p>
+											<p>Aksesnya sangat mudah, informasi sangat lengkap, pemateri berkualitas</p>
+										</td>
+									</tr>
+									<tr>
+										<td><img class="img-circle jarak" src="img/hijau.PNG" width="40" height="40"></td>
+										<td>
+											<p class="poin">Murah</p>
+											<p>Aksesnya sangat mudah, informasi sangat lengkap, pemateri berkualitas</p>
+										</td>
+									</tr>
+									<tr>
+										<td><img class="img-circle jarak" src="img/hijau.PNG" width="40" height="40"></td>
+										<td>
+											<p class="poin">Lengkap</p>
+											<p>Aksesnya sangat mudah, informasi sangat lengkap, pemateri berkualitas</p>
+										</td>
+									</tr>
+									<tr>
+										<td><img class="img-circle jarak" src="img/hijau.PNG" width="40" height="40"></td>
+										<td>
+											<p class="poin">Cepat</p>
+											<p>Aksesnya sangat mudah, informasi sangat lengkap, pemateri berkualitas</p>
+										</td>
+									</tr>
+								</table>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+				<style>
+					.ukuran{
+						font-size: 16px;
+						padding: 0px 15px;
+					}
+					.kiri{
+						display: inline-block;
+						padding-left: 10px;
+						padding-right: 45px;
+						color: #757475;
+					}
+					.gariss{
+						color: #d2d2d3;
+						border: 1px solid;
+						margin-top: 0;
+						position: relative;
+    				bottom: 10px;
+					}
+					.ukuran > b {
+						float: right;
+   					padding-right: 70px;
+					}
+					.rec{
+						color: #5f5d5d;
+					}
+					.rec > ul > li > a {
+						color: #5f5d5d;
+						font-size: 55px;
+					}
+				</style>
+				<div class="col-md-4">
+					<div class="panel panel-default" style="border-radius: 10px;">
+						<div class="panel-body ukuran" style="padding-top: 15px;">
+								<span class="fa fa-circle" aria-hidden="true" style="color: #757475;"></span>
+								<p class="kiri">Durasi per sesi</p><b>5 jam</b>
+								<hr class="gariss">
+						</div>
+						<div class="panel-body ukuran">
+								<span class="fa fa-circle" aria-hidden="true" style="color: #757475;"></span>
+								<p class="kiri">Durasi Total</p><b>15 jam</b>
+								<hr class="gariss">
+						</div>
+						<div class="panel-body ukuran">
+								<span class="fa fa-circle" aria-hidden="true" style="color: #757475;"></span>
+								<p class="kiri">Durasi Sertifikasi</p><b>5 jam</b>
+								<hr class="gariss">
+						</div>
+						<div class="panel-body ukuran">
+								<span class="fa fa-circle" aria-hidden="true" style="color: #757475;"></span>
+								<p class="kiri">Level</p><b>Menengah</b>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 text-center">
+								<div class="rec">
+									<h4 class="footer-header">Rekomendasikan pada teman</h4>
+									<!-- footer social -->
+									<ul class="footer-social">
+										<li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+										<li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
+										<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+										<li><a href="#"><i class="fa fa-youtube-square"></i></a></li>
+									</ul>
+									<!-- /footer social -->
+							</div>
+				</div>
+
+
+				<div class="col-md-4">
+						<div class="panel panel-default" style="border-radius: 10px;">
+							<div class="panel-body" style="padding: 45px;">
+									<h2 style="color: #009b4c;">Tentang Mitra</h2>
+									<p>Ingin mendapatkan kemampuan pengujian perangkat lunak untuk memulai karir atau apakah Anda seorang pengembang perangkat lunak yang ingin meningkatkan kempuan pengujian unit anda ? Kursus ini, bagian dari program pengujian Perangakat Lunak dan Verifikasi MikroMaster, akan memberikan keterampilan penting yang anda butuhkan untuk sukses.</p>
+							</div>
+						</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	
+	<footer id="footer" class="section section-grey">
+		<!-- container -->
+		<div class="container">
+			<!-- row -->
+			<div class="row">
+				<!-- footer widget -->
+				<div class="col-md-3 col-sm-6 col-xs-6">
+					<div class="footer">
+						<!-- footer logo -->
+						<div class="footer-logo">
+							<a class="logo" href="#">
+								<img src="./img/logo.png" alt="">
+							</a>
+						</div>
+						<!-- /footer logo -->
+						
+						<p>sertifa.com adalah platform yang mempertemukan penyedia jasa sertifikasi profesi dengan pihak yang mencari sertifikasi
+							profesi.</p>
+							
+						</div>
+					</div>
+					<!-- /footer widget -->
+					
+					<!-- footer widget -->
+					<div class="col-md-3 col-sm-6 col-xs-6">
+						<div class="footer">
+							<h3 class="footer-header">Lainnya</h3>
+							<ul class="list-links">
+								<li><a href="#">Tentang Kami</a></li>
+								<li><a href="#">Aturan Pengguna</a></li>
+								<li><a href="#">Kebijakan Privasi</a></li>
+								<li><a href="#">Mitra & Partner</a></li>
+								<li><a href="#">Blog</a></li>
+							</ul>
+						</div>
+					</div>
+					<!-- /footer widget -->
+					
+					<div class="clearfix visible-sm visible-xs"></div>
+					
+					<!-- footer widget -->
+					<div class="col-md-3 col-sm-6 col-xs-6">
+						<div class="footer">
+							<h3 class="footer-header">Didukung oleh</h3>
+							<img src="img/lsp/bnsp.png" class="img-responsive"/>
+						</div>
+					</div>
+					<!-- /footer widget -->
+					
+					<!-- footer subscribe -->
+					<div class="col-md-3 col-sm-6 col-xs-6">
+						<div class="footer">
+							<h3 class="footer-header">Stay Connected</h3>
+							<!-- footer social -->
+							<ul class="footer-social">
+								<li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
+								<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+								<li><a href="#"><i class="fa fa-youtube-square"></i></a></li>
+							</ul>
+							<!-- /footer social -->
+						</div>
+					</div>
+					<!-- /footer subscribe -->
+				</div>
+				<!-- /row -->
+				<hr>
+				<!-- row -->
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center">
+						<!-- footer copyright -->
+						<div class="footer-copyright">
+							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+							Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | <a href="https://sertifa.com" target="_blank">Sertifa.com</a>
+							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						</div>
+						<!-- /footer copyright -->
+					</div>
+				</div>
+				<!-- /row -->
+			</div>
+			<!-- /container -->
+		</footer>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/slick.min.js"></script>
+		<script src="js/nouislider.min.js"></script>
+		<script src="js/jquery.zoom.min.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+	</html>
+	
